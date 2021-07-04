@@ -1,0 +1,12 @@
+Create a Countries SPlist
+Add Country and State Columns
+
+Cerate an app
+Add two label boxes and two Dropdown
+
+Connect the SPlist to both Dropdown 
+Select Title as value for country
+Select State as value for State
+
+Sort(Distinct(Countries,Title),Result) - DropDown1
+Filter(Countries,Title = Dropdown1.Selected.Result) - DropDown2

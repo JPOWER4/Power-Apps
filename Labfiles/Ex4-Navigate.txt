@@ -1,0 +1,4 @@
+Navigate one screen to another
+
+Navigate(DataTable,ScreenTransition.None)
+Navigate(DataEntry,ScreenTransition.None)

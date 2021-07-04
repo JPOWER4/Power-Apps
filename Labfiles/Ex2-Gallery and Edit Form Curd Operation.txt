@@ -1,0 +1,27 @@
+Go To SharePoint site
+Create List - MyList
+Add columns
+	Title -Name - Single line Text
+	Description - Multiple line Text
+	Amount - Number
+	DOJ - Date and Time
+	Catagory - Choic
+
+Create a Blank App - Tablet
+- Header
+- Label for Header
+Add a Gallay - connect the SP list
+Add a Edit form
+
+New button - NewForm(Form1) onSelect Event
+Cancel - ViewForm(Form1) onSelect Event
+Submit - SubmitForm(Form1) onSelect Event
+
+Gallery arrow mark - onSelect Event
+EditForm(Form1)
+
+New button - (Form1.Mode = FormMode.View) -  Visible property
+Cancel button - !(Form1.Mode = FormMode.View)-  Visible property
+
+Add a icon inside Gallary Datacard 
+Onselect - Remove(listname,ThisItem)

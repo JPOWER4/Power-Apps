@@ -1,0 +1,16 @@
+Go To SharePoint
+Create a Site
+Create List - MyEmployees
+Add columns
+1- rename Title to EmployeeName
+2- New column "Employee Code"
+3. New Column "Deignation"
+4. New Column "Photo" - type (Hyperlink / picture) and select picture
+
+
+
+Add some images in Documents library
+
+
+
+Add items in MyEmployees incluing images from Document Library
