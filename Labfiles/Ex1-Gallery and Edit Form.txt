@@ -9,6 +9,8 @@ Add columns
 Add some images in Documents library
 Add items in MyEmployees incluing images from Document Library
 
+Photo url format - Ex: https://noustraining.sharepoint.com/sites/NousTraining/Shared%20Documents/jenkins.jpg
+
 Go to power Apps
 Create a new App - Tablet format
 Add gallery - add MyEmployees Sharepoint list as datasource
