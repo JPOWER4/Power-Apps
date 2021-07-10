@@ -10,3 +10,5 @@ Select State as value for State
 
 Sort(Distinct(Countries,Title),Result) - DropDown1
 Filter(Countries,Title = Dropdown1.Selected.Result) - DropDown2
+or 
+Filter(Countries,Title=drd_country.SelectedText.Value)

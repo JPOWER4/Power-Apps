@@ -15,7 +15,7 @@ Add a Edit form
 
 New button - NewForm(Form1) onSelect Event
 Cancel - ViewForm(Form1) onSelect Event
-Submit - SubmitForm(Form1) onSelect Event
+Submit - SubmitForm(Form1) onSelect Event, ViewForm(Form1);ResetForm(Form1);
 
 Gallery arrow mark - onSelect Event
 EditForm(Form1)
