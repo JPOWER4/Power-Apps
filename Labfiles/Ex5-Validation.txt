@@ -29,7 +29,7 @@ If(
     )
 );
 
-RegEx for phone number - Visible
+Add one label and add "Please enter proper Phone" and visible property
 If(
     IsMatch(
     txt_phone.Text,
@@ -39,17 +39,18 @@ If(
     true
 )
 
-Email
+Add one label and add "Please enter proper Email" and visible property
 If(IsMatch(txt_email.Text,"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"),false,true)
 
 IsBlank(txt_name.Text)
 
 
 Without RegEx
+Add one label and add "Please enter proper Email" and visible property
 If(IsMatch(txt_email.Text,Match.Email),false,true)
 
-BorderColor for TextInputs
 
+BorderColor for TextInputs based on validation
 strcolorn - txt_name
 strcolore - txt_email
 strcolorp - txt_phone
