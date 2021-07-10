@@ -3,28 +3,28 @@ Add three Text Input controls
 2. Email
 3. Phone
 
-
 UpdateContext({validationForm: true});
 If(
     IsBlank(txt_name.Text),
-    UpdateContext({validationForm: false})
+    UpdateContext({validationForm: false});Set(strcolorn,Red);
 );
 If(
     IsBlank(txt_email.Text),
-    UpdateContext({validationForm: false})
+    UpdateContext({validationForm: false});Set(strcolore,Red);
 );
 If(
     IsBlank(txt_phone.Text),
-    UpdateContext({validationForm: false})
+    UpdateContext({validationForm: false});Set(strcolorp,Red);
 );
 If(
     validationForm,
     Notify(
-        "Validation Sucessful",
+        "Sucess",
         NotificationType.Success
-    ),
+    )
+    ,
     Notify(
-        "Validation failed",
+        "Please enter all columns",
         NotificationType.Error
     )
 );
@@ -48,3 +48,8 @@ IsBlank(txt_name.Text)
 Without RegEx
 If(IsMatch(txt_email.Text,Match.Email),false,true)
 
+BorderColor for TextInputs
+
+strcolorn - txt_name
+strcolore - txt_email
+strcolorp - txt_phone
