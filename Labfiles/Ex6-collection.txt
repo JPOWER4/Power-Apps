@@ -1,0 +1,66 @@
+Add two controls - Name and Desc (Text Input)
+
+Add new button - onselect
+Set(currentItem,{ID:0, name:" ",desc:" "});
+Set(displaymode, DisplayMode.Edit);
+
+Add a submit button - onselect
+If(
+    currentItem.ID = 0,
+    Set(
+        itemcount,
+        CountRows(listofItem)
+    );
+    Collect(
+        listofItem,
+        {
+            ID: itemcount + 1,
+            name: txt_name.Text,
+            desc: txt_desc.Text
+        }
+    );
+    Set(
+        currentItem,
+        {
+            ID: 0,
+            name: " ",
+            desc: " "
+        }
+    );
+    ,
+    UpdateIf(
+        listofItem,
+        ID = Gallery1.Selected.ID,
+        {
+            name: txt_name.Text,
+            desc: txt_desc.Text
+        }
+    );
+);
+ Set(
+        displaymode,
+        DisplayMode.View
+    );
+
+
+Add a Gallery 
+Assign gallery datasource with collection - listofItem
+
+Add edit button and remove button
+
+Data card onselect - 
+Set(currentItem,{ID:ThisItem.ID,name:ThisItem.name,desc:ThisItem.desc});
+Set(displaymode, DisplayMode.View);
+
+Edit onselect
+Set(currentItem,{ID:ThisItem.ID,name:ThisItem.name,desc:ThisItem.desc});
+Set(displaymode, DisplayMode.Edit);
+
+Remove onselect 
+Remove(listofItem,ThisItem)
+
+Go to textinput name and desc
+Displaymode : displaymode 
+
+
+
