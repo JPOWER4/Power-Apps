@@ -25,6 +25,8 @@ If(
             desc: txt_desc.Text
         }
     );
+Reset(txt_name);
+    Reset(txt_desc);
     Set(
         currentItem,
         {
@@ -36,7 +38,7 @@ If(
     ,
     UpdateIf(
         listofItem,
-        ID = Gallery1.Selected.ID,
+       ID = currentItem.ID,
         {
             name: txt_name.Text,
             desc: txt_desc.Text
