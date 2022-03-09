@@ -4,6 +4,12 @@ Add new button - onselect
 Set(currentItem,{ID:0, name:" ",desc:" "});
 Set(displaymode, DisplayMode.Edit);
 
+Go to textinput name 
+assign Default to currentItem.name
+
+Go to textinput desc
+assign Default to currentItem.desc
+
 Add a submit button - onselect
 If(
     currentItem.ID = 0,
@@ -61,6 +67,7 @@ Remove(listofItem,ThisItem)
 
 Go to textinput name and desc
 Displaymode : displaymode 
+
 
 
 
