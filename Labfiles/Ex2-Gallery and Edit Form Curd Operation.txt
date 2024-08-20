@@ -1,4 +1,4 @@
-Go To SharePoint site
+t Go To SharePoint site
 Create List - MyList
 Add columns
 	Title -Name - Single line Text
