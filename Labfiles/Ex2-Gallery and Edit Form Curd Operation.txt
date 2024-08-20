@@ -15,13 +15,14 @@ Add a Edit form
 
 New button - NewForm(Form1) onSelect Event
 Cancel - ViewForm(Form1) onSelect Event
-Submit - SubmitForm(Form1) onSelect Event, ViewForm(Form1);ResetForm(Form1);
+Submit - SubmitForm(Form1);ViewForm(Form1) onSelect Event, 
 
-Gallery arrow mark - onSelect Event
-EditForm(Form1)
+Gallery remove arrow mark and add edit icon - inside Gallary Datacard
+EditForm(Form1) onSelect Event
 
 New button - (Form1.Mode = FormMode.View) -  Visible property
 Cancel button - !(Form1.Mode = FormMode.View)-  Visible property
+Submit button - !(Form1.Mode = FormMode.View)-  Visible property
 
-Add a icon inside Gallary Datacard 
+Add a Trash icon inside Gallary Datacard 
 Onselect - Remove(listname,ThisItem)
