@@ -18,7 +18,7 @@ Cancel - ViewForm(Form1) onSelect Event
 Submit - SubmitForm(Form1);ViewForm(Form1) onSelect Event, 
 
 Gallery remove arrow mark and add edit icon - inside Gallary Datacard
-EditForm(Form1) onSelect Event
+Edit - EditForm(Form1) onSelect Event
 
 New button - (Form1.Mode = FormMode.View) -  Visible property
 Cancel button - !(Form1.Mode = FormMode.View)-  Visible property
