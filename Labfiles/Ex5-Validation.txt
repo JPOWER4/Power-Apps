@@ -3,31 +3,24 @@ Add three Text Input controls
 2. Email
 3. Phone
 
-UpdateContext({validationForm: true});
-If(
-    IsBlank(txt_name.Text),
-    UpdateContext({validationForm: false});Set(strcolorn,Red);
+Add a button --> onselect add below code
+UpdateContext({validationform:true});
+If(IsBlank(txt_name.Text), UpdateContext({validationform:false}); Set(strcolorn,Color.Red),Set(strcolorn,Color.Black)
 );
-If(
-    IsBlank(txt_email.Text),
-    UpdateContext({validationForm: false});Set(strcolore,Red);
+If(IsBlank(txt_email.Text), UpdateContext({validationform:false}); Set(strcolore,Color.Red),Set(strcolore,Color.Black)
 );
-If(
-    IsBlank(txt_phone.Text),
-    UpdateContext({validationForm: false});Set(strcolorp,Red);
+If(IsBlank(txt_phone.Text), UpdateContext({validationform:false}); Set(strcolorp,Color.Red),Set(strcolorp,Color.Black)
 );
-If(
-    validationForm,
-    Notify(
-        "Sucess",
-        NotificationType.Success
-    )
-    ,
-    Notify(
-        "Please enter all columns",
-        NotificationType.Error
-    )
-);
+
+If(validationform, 
+Notify("Sucess",NotificationType.Success),
+Notify("Please enter all columns",NotificationType.Error));
+
+Go to the controls and update BorderColor
+BorderColor for TextInputs based on validation
+strcolorn - txt_name
+strcolore - txt_email
+strcolorp - txt_phone
 
 Add one label and add "Please enter proper Phone" and visible property
 If(
@@ -74,12 +67,8 @@ If(
 ))
 
 
-BorderColor for TextInputs based on validation
-strcolorn - txt_name
-strcolore - txt_email
-strcolorp - txt_phone
 
 onChange
-If(IsBlank(txt_name.Text),UpdateContext({strcolorn: Red}),UpdateContext({strcolorn: Black}))
-If(IsBlank(txt_email.Text),UpdateContext({strcolore: Red}),UpdateContext({strcolore: Black}))
-If(IsBlank(txt_phone.Text),UpdateContext({strcolorp: Red}),UpdateContext({strcolorp: Black}))
+If(IsBlank(txt_name.Text),Set({strcolorn: Red}),Set({strcolorn: Black}))
+If(IsBlank(txt_email.Text),Set({strcolore: Red}),Set({strcolore: Black}))
+If(IsBlank(txt_phone.Text),Set({strcolorp: Red}),Set({strcolorp: Black}))
