@@ -66,6 +66,6 @@ If(
 
 
 onChange
-If(IsBlank(txt_name.Text),Set(strcolorn, Red),Set(strcolorn, Black))
-If(IsBlank(txt_email.Text),Set(strcolore, Red),Set(strcolore, Black))
-If(IsBlank(txt_phone.Text),Set(strcolorp, Red),Set(strcolorp, Black))
+If(IsBlank(txt_name.Text),Set(strcolorn, Color.Red),Set(strcolorn, Color.Black))
+If(IsBlank(txt_email.Text),Set(strcolore, Color.Red),Set(strcolore, Color.Black))
+If(IsBlank(txt_phone.Text),Set(strcolorp, Color.Red),Set(strcolorp, Color.Black))
